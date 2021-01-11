@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excuse generator</title>
+
+   
+</head>
+<body style="background-color: aqua;">
+    <h1 style="text-align: center; font-style:oblique ; font-size:xx-large; ">Excuse Generator</h1>
+    <p style="font-size: medium;">
+        <div>You don't wanna go for work. Not to worry! we will provide you with a lot of excuses. All tested by us.</div>
+        <br>
+        <div>We have a lot of excuses ,some of them are very funny infact u too enjoy them saying.</div>
+        <div>Give them a try and thanks us later.</div>
+        <br>
+        <br>
+        <br>
+        <button>Just click on <b><i>magic</i></b> below and explore different excuses available</button>
+       
+    
+    </p>
+   <div id="ctr"> <button id="btn" onclick="Excuse()"  > Magic</button></div>
+  <style>
+    #btn{
+   background-color: rgba(182, 224, 145, 0.911);    
+  align-items: center;
+  height: 40px;
+  border: 2px solid rgb(182, 252, 228); 
+  }
+  #ctr{
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  }
+  </style>
+    <script>
+        function Excuse()
+        {
+            var exc=['My dog in depression , he needs a lot of cuddles','I am busy on creating a profile on shadi.com','Ldki wale aa rahe h muge dekhne',
+        'I eat a lot of butter, now my stomach is growling','I am on date with your wife','Offer wine to boss u next time go to work'];
+            var sen = exc[Math.round(Math.random()*(exc.length-1))];
+            document.getElementById('exc').innerHTML=sen ; 
+        }
+    </script>
+
+    <div id="exc"></div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <div>New excuses are always welcome</div>
+   <br>
+<div> <textarea name="myText" id="ta"></textarea></div>
+
+<style>
+    #ta{
+        margin: 0px;
+    width: 983px;
+    height: 62px;
+    }
+</style>
+<input type="submit" value="Contribute" >
+</body>
+</html>
